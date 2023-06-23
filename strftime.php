@@ -52,7 +52,7 @@ if (!function_exists('strftime')) {
 
         elseif (
             !is_scalar($timestamp) ||
-            (is_string($timestamp) && !preg_match('/^(0|[1-9]\d*)]$/', $timestamp))
+            (is_string($timestamp) && !preg_match('/^(0|[1-9]\d*)$/', $timestamp))
         ) {
             trigger_error('strftime() expects parameter 2 to be integer, ' . $type . ' given', E_USER_WARNING);
             return false;
