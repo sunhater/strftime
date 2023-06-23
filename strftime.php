@@ -40,7 +40,7 @@ if (!function_exists('strftime')) {
         if (preg_match('/^(integer|double)$/', $type))
             return (string) $format;
 
-        if (!is_string($type))
+        if ($type !== 'string')
             return false;
 
     // PARAMETER 2 CHECK
