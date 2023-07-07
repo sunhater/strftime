@@ -247,10 +247,6 @@ if (!function_exists('strftime')) {
                     $return .= ($fmt == '%p') ? strtoupper($str) : strtolower($str);
                 }
 
-                elseif ($fmt == '%P') {
-
-                }
-
                 elseif ($fmt == '%X') {
 
                 }
